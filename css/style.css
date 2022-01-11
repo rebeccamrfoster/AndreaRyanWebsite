@@ -40,6 +40,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     line-height: 70px;
+    color: #89667C;
 }
 
 h4 {
@@ -47,7 +48,7 @@ h4 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color: #7f411f;
+    color: rgb(51, 51, 51);
     /* color: #425BB5; */
     margin-left: 40px;
     font-weight: 700;
@@ -61,7 +62,7 @@ h4:before {
     display: block;
     height: 2px;
     /* background: #425BB5; */
-    background: #7f411f;
+    background: rgb(51, 51, 51);
     top: 9px;
 }
 
