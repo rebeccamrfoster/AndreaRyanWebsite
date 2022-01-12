@@ -40,7 +40,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     line-height: 70px;
-    color: #89667C;
+    color: #745268;
 }
 
 h4 {
@@ -255,6 +255,10 @@ nav li a {
     color: #444;
     font-size: 11px;
     font-weight: bold;
+
+    padding-bottom: 3px;
+    transition: all .2s ease;
+    border-bottom: 2px solid transparent;
 }
 
 .bg-nav {
@@ -272,12 +276,16 @@ a:focus {
 }
 
 a:hover {
-    color: #425BB5;
+    /* color: #425BB5; */
+    color: #745268;
     text-decoration: none;
 }
 
 a.active {
-    color: #425BB5;
+    /* color: #425BB5; */
+    color: #745268;
+    /* text-decoration: underline solid #745268 2px; */
+    border-bottom: 2px solid #745268;
 }
 
 
@@ -304,6 +312,15 @@ a.active {
 /* about section
 ==================================================*/
 
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    display: flex;
+    flex-direction: column;
+}
+
+#green-plant {
+    align-self: center;
+}
+
 #about {
     padding: 100px 0;
 }
@@ -314,7 +331,8 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 10px solid #425BB5;
+    /* border: 10px solid #425BB5; */
+    border: 10px solid #745268;
     width: 400px;
     height: 400px;
     top: 40px;
@@ -380,11 +398,13 @@ a.active {
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #425BB5;
+    /* background-color: #425BB5; */
+    background-color: #745268;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #425BB5;
+    /* box-shadow: inset 40em 0 0 0 #425BB5; */
+    box-shadow: inset 40em 0 0 0 #745268;
 }
 
 .timeline-event-copy {
@@ -413,13 +433,15 @@ a.active {
 }
 
 .timeline-event-icon {
-    -webkit-transition: -webkit-transform 0.2s ease-in;
+    /* -webkit-transition: -webkit-transform 0.2s ease-in;
     transition: -webkit-transform 0.2s ease-in;
     transition: transform 0.2s ease-in;
-    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in; */
+    transition: all .6s ease;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: #425BB5;
+    /* background-color: #425BB5; */
+    background-color: rgb(51, 51, 51);
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -431,17 +453,18 @@ a.active {
 }
 
 .timeline-event-thumbnail {
-    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    /* -moz-transition: box-shadow 0.5s ease-in 0.1s;
     -o-transition: box-shadow 0.5s ease-in 0.1s;
     -webkit-transition: box-shadow 0.5s ease-in;
     -webkit-transition-delay: 0.1s;
     -webkit-transition: box-shadow 0.5s ease-in 0.1s;
-    transition: box-shadow 0.5s ease-in 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s; */
+    transition: all .3s ease;
     color: white;
     font-size: 12px;
     font-weight: bold;
     background-color: black;
-    box-shadow: inset 0 0 0 0em #425BB5;
+    /* box-shadow: inset 0 0 0 0em #425BB5; */
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
@@ -582,10 +605,10 @@ a.active {
     text-align: center;
 }
 
-.portfolio_item img {
+/* .portfolio_item img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
+} */
 
 .portfolio-padding {
     padding: 50px 0;
@@ -634,6 +657,10 @@ a.active {
 /* contact
 ==================================================*/
 
+#reach-out {
+    font-size: 16px;
+}
+
 #contact {
     padding: 100px 0;
     background: #f3f3f3
@@ -643,7 +670,7 @@ a.active {
 #contact-form textarea {
     height: 50px;
     margin-bottom: 10px;
-    border-radius: 0;
+    border-radius: 2px;
 }
 
 #contact-form label {
@@ -727,7 +754,8 @@ fieldset {
 }
 
 #submit {
-    background-color: #425BB5;
+    /* background-color: #425BB5; */
+    background-color: #745268;
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
@@ -735,6 +763,18 @@ fieldset {
     letter-spacing: 2px;
     font-weight: bold;
     width: 100%;
+    transition: all .3s ease;
+}
+
+#submit:hover {
+    background-color: #89667C;
+}
+
+.form-control:focus {
+  border-color: #89667C;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(137, 102, 124, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(137, 102, 124, .6);
 }
 
 .social {
