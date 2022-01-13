@@ -312,7 +312,7 @@ a.active {
 /* about section
 ==================================================*/
 
-[data-aos^=fade][data-aos^=fade].aos-animate {
+#about-section {
     display: flex;
     flex-direction: column;
 }
