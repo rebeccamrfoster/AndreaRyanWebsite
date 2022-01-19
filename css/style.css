@@ -574,8 +574,8 @@ a.active {
     -webkit-transition: all .3s ease-in-out .3s;
     transition: all .3s ease-in-out .3s;
     opacity: 0;
-    font-size: 10px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    /* letter-spacing: 2px; */
 }
 
 .portfolio_item:hover .portfolio_item_hover {
@@ -659,6 +659,15 @@ a.active {
 
 /* contact
 ==================================================*/
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-img {
+    height: 400px;
+}
 
 #reach-out {
     font-size: 16px;
