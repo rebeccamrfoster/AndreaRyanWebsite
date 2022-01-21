@@ -341,6 +341,7 @@ a.active {
 
 #green-plant {
     align-self: center;
+    /* transform: scaleX(-1); */
 }
 
 #about {
@@ -355,10 +356,11 @@ a.active {
     position: absolute;
     /* border: 10px solid #425BB5; */
     border: 10px solid #745268;
+    border-color: rgba(137, 102, 124, .8);
     width: 400px;
     height: 400px;
     top: 40px;
-    left: 50px;
+    left: 70px;
     z-index: 1;
 }
 
@@ -745,6 +747,7 @@ a.active {
 
 .contact-form-img {
     height: 400px;
+    /* border: 10px solid #745268; */
 }
 
 #reach-out {
