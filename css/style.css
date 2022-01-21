@@ -66,6 +66,12 @@ h4:before {
     top: 9px;
 }
 
+::selection {
+  background: rgba(137, 102, 124, .6); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(137, 102, 124, .6); /* Gecko Browsers */
+}
 
 /* General
 ==================================================*/
@@ -312,6 +318,22 @@ a.active {
 /* about section
 ==================================================*/
 
+.consult-btn {
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(137, 102, 124, .8);
+    color: white;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 16px;
+    transition: all .3s ease;
+}
+
+.consult-btn:hover {
+    background-color: rgba(137, 102, 124, 1);
+    color: white;
+}
+
 #about-section {
     display: flex;
     flex-direction: column;
@@ -337,7 +359,7 @@ a.active {
     height: 400px;
     top: 40px;
     left: 50px;
-    z-index: 1
+    z-index: 1;
 }
 
 
@@ -473,6 +495,62 @@ a.active {
 
 /* projects section
 ==================================================*/
+
+/* FAQ section */
+
+#projects .container .col-md-12 {
+    float: none;
+    margin-bottom: 50px;
+}
+
+.faq {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.faq-item {
+    background-color: #f3f3f3;
+    width: 350px;
+    padding: 20px 40px 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item img {
+    width: 80px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+.faq-item h3:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+    width: 25%;
+    background-color: black;
+
+    transition: all .5s ease;
+}
+
+.faq-item:hover h3:after {
+    width: 70%;
+    background-color: #745268;
+}
+
+/* FAQ section */
 
 #projects {
     padding: 100px 0;
