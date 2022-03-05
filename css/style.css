@@ -1,3 +1,14 @@
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+    background-color: #745268;
+    color: white;
+}
+
+
 /*
 * Resume template
 * Created by : Ahmed Essa
