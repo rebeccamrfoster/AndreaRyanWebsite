@@ -1,11 +1,31 @@
-.coming-soon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 30px;
-    background-color: #745268;
-    color: white;
+/* Simple Practice Widget */
+.spwidget-button-wrapper {
+    /* text-align: center; */
+    margin: 16px 0;
+}
+
+.spwidget-button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff !important;
+    background: rgba(137, 102, 124, .8);
+    border: 0;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s ease;
+    padding: 16px 20px;
+}
+
+.spwidget-button:hover {
+    background: rgba(137, 102, 124, 1);
+}
+
+.spwidget-button:active {
+    color: rgba(255, 255, 255, .75) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset
 }
 
 
@@ -750,6 +770,13 @@ a.active {
 
 /* contact
 ==================================================*/
+
+.pride-flag-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: #f3f3f3;
+}
 
 #contact-form {
     display: flex;
