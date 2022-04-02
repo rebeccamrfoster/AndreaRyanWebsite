@@ -6,7 +6,7 @@
 
 .spwidget-button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 16px 20px;
     color: #fff !important;
     background: rgba(137, 102, 124, .8);
     border: 0;
@@ -16,7 +16,6 @@
     font-weight: 600;
     text-decoration: none;
     transition: all .3s ease;
-    padding: 16px 20px;
 }
 
 .spwidget-button:hover {
@@ -27,7 +26,6 @@
     color: rgba(255, 255, 255, .75) !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset
 }
-
 
 /*
 * Resume template
@@ -771,11 +769,41 @@ a.active {
 /* contact
 ==================================================*/
 
+.img-and-flag-container {
+    position: relative;
+}
+
 .pride-flag-container {
-    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* display: flex;
     justify-content: center;
     padding: 20px 0;
-    background: #f3f3f3;
+    background: #f3f3f3; */
+}
+
+.consultation-CTA {
+    display: inline-block;
+    padding: 16px 20px;
+    color: #333 !important;
+    background: none;
+    border: 2px solid rgba(137, 102, 124, 1);
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s ease;
+    max-width: 280px;
+}
+
+.contact-link {
+    color: rgba(137, 102, 124, 1);
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #333;
 }
 
 #contact-form {
